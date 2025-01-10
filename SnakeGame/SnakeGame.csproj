@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\dead_body.png" />
 	  <None Remove="Resources\Images\dead_head.png" />
 	  <None Remove="Resources\Images\empty.png" />
+	  <None Remove="Resources\Images\bomb.png" />
 	  <None Remove="Resources\Images\food.png" />
 	  <None Remove="Resources\Images\head.png" />
 	</ItemGroup>
@@ -73,15 +74,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\App.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\AppShell.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\MainPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <ProjectReference Include="..\SnakeGame.Data\SnakeGame.Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiXaml Update="Views\App.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\AppShell.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\LoginPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\RegisterPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 </Project>

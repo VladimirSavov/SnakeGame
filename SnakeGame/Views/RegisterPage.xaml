@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SnakeGame.RegisterPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="Потребителско име"
+                   PlaceholderColor="Gray"/>
+
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Имейл"
+                   Keyboard="Email"
+                   PlaceholderColor="Gray"/>
+
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="Парола"
+                   IsPassword="True"
+                   PlaceholderColor="Gray"/>
+
+            <Entry x:Name="ConfirmPasswordEntry"
+                   Placeholder="Повтори паролата"
+                   IsPassword="True"
+                   PlaceholderColor="Gray"/>
+
+            <Button Text="Регистрация"
+                    Clicked="OnRegisterBtnClicked"/>
+
+            <Button Text="Вече имам акаунт"
+                    Clicked="OnLoginBtnClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

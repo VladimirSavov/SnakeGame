@@ -72,7 +72,7 @@
             HorizontalOptions="Center"
             VerticalOptions="Center">
 
-            <ImageButton
+            <!--<ImageButton
                 x:Name="Up"
                 Grid.Row="0"
                 Grid.Column="1"
@@ -98,7 +98,7 @@
                 Grid.Column="2"
                 Pressed="Right_Pressed"
                 Rotation="90"
-                Style="{StaticResource ArrowButtonStyle}" />
+                Style="{StaticResource ArrowButtonStyle}" />-->
         </Grid>
     </Grid>
 
